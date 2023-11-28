@@ -45,7 +45,7 @@ export type Rec = {
 //credit 积分
 export type Cdt = Rec & {
 	utc: { eft: number, exp: number, agr: number }, // effective-utc 生效时间，expire-utc 失效时间，用户同意协议的时间 agreement-utc
-	aug?: { msg: string, amt: number, utc: number, sec: Usr["_id"] }[], //augmentation 追加积分，谁追加
+	aug?: { msg: string, amt: number, utc: number, usr: Usr["_id"] }[], //augmentation 追加积分，谁追加
 }
 
 //debit 积分使用 记录 credit-debit accounting
